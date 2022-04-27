@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Rest API</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+
+  .subHeading{
+    font-weight: 500;
+    color: rgba(245, 245, 245, 0.486);
+    font-size: medium;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .download-button {
+    margin: 3% 1% 2% 0;
+    width: 200px;
+    position: relative;
+  }
+
+  .heading {
+    padding: 25px;
+    padding-bottom: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 20px;
+    color: ivory;
+    animation-name: success;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    font-size: x-large;
+  }
+
+  footer {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.836);
+  }
+  .info{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.781);
+  }
+</style>
+
+<body>
+  <div class="container">
+    <center>
+      <div class="col-lg-6 col-lg-12 heading">
+        <h1 id="heading">Student Data - Restful API</h1>
+        <p class="subHeading">
+          Click the below response button to get the JSON data from API! <br>
+          
+        </p>
+      </div>
+      <div class="col-lg-6 col-lg-12">
+        <p class="info">
+          This is home route '/' of student data RESTful API. 
+          To fetch the data you need to go to '/data' route. <br>
+          This API is built on fully featured server-side web frame work Django. 
+        </p>
+      </div>
+      <div class="col-lg-6 col-lg-12 btn-div">
+          <a href="data/"> <button class="btn btn-outline-light download-button" type="submit" name="button2"
+              value="blacklist">
+              Responses <i class="fas fa-users"></i>
+            </button></a>
+      </div>
+    </center>
+  </div>
+  <footer>
+    <p>Copyright 2022 @ Anurag VIT</p>
+  </footer>
+</body>
+
+</html>
